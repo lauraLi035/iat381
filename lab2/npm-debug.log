@@ -1,0 +1,151 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'nws' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.31
+4 verbose cache add [ 'nws', null ]
+5 verbose cache add name=undefined spec="nws" args=["nws",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'nws',
+6 verbose parsed url   path: 'nws',
+6 verbose parsed url   href: 'nws' }
+7 silly lockFile ae1cc29f-nws nws
+8 verbose lock nws /Users/laura/.npm/ae1cc29f-nws.lock
+9 silly lockFile ae1cc29f-nws nws
+10 silly lockFile ae1cc29f-nws nws
+11 verbose addNamed [ 'nws', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 39bead1c-nws nws@
+14 verbose lock nws@ /Users/laura/.npm/39bead1c-nws.lock
+15 silly addNameRange { name: 'nws', range: '*', hasData: false }
+16 verbose request where is /nws
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 51937a0950bcc94b
+19 verbose url raw /nws
+20 verbose url resolving [ 'https://registry.npmjs.org/', './nws' ]
+21 verbose url resolved https://registry.npmjs.org/nws
+22 verbose request where is https://registry.npmjs.org/nws
+23 info trying registry request attempt 1 at 13:00:28
+24 http GET https://registry.npmjs.org/nws
+25 http 200 https://registry.npmjs.org/nws
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Tue, 20 Jan 2015 21:00:29 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"8DFX6CB8DSIM9NQ4BSBYD69D"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '12086',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '1',
+26 silly registry.get     'x-served-by': 'cache-sjc3127-SJC',
+26 silly registry.get     'x-cache': 'HIT',
+26 silly registry.get     'x-cache-hits': '1',
+26 silly registry.get     'x-timer': 'S1421787629.002508,VS0,VE0',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'nws', range: '*', hasData: true }
+28 silly addNameRange versions [ 'nws',
+28 silly addNameRange   [ '0.1.1',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.3.1',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.5.1',
+28 silly addNameRange     '0.6.0',
+28 silly addNameRange     '0.6.1' ] ]
+29 verbose addNamed [ 'nws', '0.6.1' ]
+30 verbose addNamed [ '0.6.1', '0.6.1' ]
+31 silly lockFile e6ac926f-nws-0-6-1 nws@0.6.1
+32 verbose lock nws@0.6.1 /Users/laura/.npm/e6ac926f-nws-0-6-1.lock
+33 silly lockFile 71c6d4d9-stry-npmjs-org-nws-nws-0-6-1-tgz https://registry.npmjs.org/nws/-/nws-0.6.1.tgz
+34 verbose lock https://registry.npmjs.org/nws/-/nws-0.6.1.tgz /Users/laura/.npm/71c6d4d9-stry-npmjs-org-nws-nws-0-6-1-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/nws/-/nws-0.6.1.tgz',
+35 verbose addRemoteTarball   'b881931f42fb2074a39bcce4efdd12cf36b33390' ]
+36 info retry fetch attempt 1 at 13:00:29
+37 verbose fetch to= /var/folders/cm/gdwbknh13lbcfn1fyzj2_nfm0000gn/T/npm-48100-E25XSI4_/registry.npmjs.org/nws/-/nws-0.6.1.tgz
+38 http GET https://registry.npmjs.org/nws/-/nws-0.6.1.tgz
+39 http 200 https://registry.npmjs.org/nws/-/nws-0.6.1.tgz
+40 silly lockFile 71c6d4d9-stry-npmjs-org-nws-nws-0-6-1-tgz https://registry.npmjs.org/nws/-/nws-0.6.1.tgz
+41 silly lockFile 71c6d4d9-stry-npmjs-org-nws-nws-0-6-1-tgz https://registry.npmjs.org/nws/-/nws-0.6.1.tgz
+42 silly lockFile e6ac926f-nws-0-6-1 nws@0.6.1
+43 silly lockFile e6ac926f-nws-0-6-1 nws@0.6.1
+44 silly lockFile 39bead1c-nws nws@
+45 silly lockFile 39bead1c-nws nws@
+46 silly resolved [ { name: 'nws',
+46 silly resolved     description: 'Launch a node-powered static web server in the current working directory.',
+46 silly resolved     version: '0.6.1',
+46 silly resolved     author: { name: 'Kenneth Powers', email: 'mail@kenpowers.net' },
+46 silly resolved     contributors: [ [Object] ],
+46 silly resolved     dependencies: { optimist: '0.3.1', connect: '~2.7.3', open: '0.0.4' },
+46 silly resolved     repository: { type: 'git', url: 'git://github.com/KenPowers/nws' },
+46 silly resolved     bin: { nws: './bin/nws' },
+46 silly resolved     main: 'index',
+46 silly resolved     keywords: [ 'web', 'server', 'local', 'static' ],
+46 silly resolved     gitHead: 'd86bd21f6d80639794f70e38fa92bfb7a87bf02c',
+46 silly resolved     bugs: { url: 'https://github.com/KenPowers/nws/issues' },
+46 silly resolved     homepage: 'https://github.com/KenPowers/nws',
+46 silly resolved     _id: 'nws@0.6.1',
+46 silly resolved     scripts: {},
+46 silly resolved     _shasum: 'b881931f42fb2074a39bcce4efdd12cf36b33390',
+46 silly resolved     _from: 'nws@',
+46 silly resolved     _npmVersion: '1.4.21',
+46 silly resolved     _npmUser: { name: 'kenpowers', email: 'mail@kenpowers.net' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: 'b881931f42fb2074a39bcce4efdd12cf36b33390',
+46 silly resolved        tarball: 'http://registry.npmjs.org/nws/-/nws-0.6.1.tgz' },
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/nws/-/nws-0.6.1.tgz' } ]
+47 info install nws@0.6.1 into /usr/local/lib
+48 info installOne nws@0.6.1
+49 verbose lib/node_modules/nws unbuild
+50 verbose tar unpack /Users/laura/.npm/nws/0.6.1/package.tgz
+51 silly lockFile 1d609eed-r-usr-local-lib-node-modules-nws tar:///usr/local/lib/node_modules/nws
+52 verbose lock tar:///usr/local/lib/node_modules/nws /Users/laura/.npm/1d609eed-r-usr-local-lib-node-modules-nws.lock
+53 silly lockFile e5b1bb22--laura-npm-nws-0-6-1-package-tgz tar:///Users/laura/.npm/nws/0.6.1/package.tgz
+54 verbose lock tar:///Users/laura/.npm/nws/0.6.1/package.tgz /Users/laura/.npm/e5b1bb22--laura-npm-nws-0-6-1-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/nws'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/nws']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/nws',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/nws',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/Users/laura/.nvm/v0.10.35/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/Users/laura/.nvm/v0.10.35/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:107:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 13.4.0
+59 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "nws"
+60 error cwd /Users/laura/iat381/lab2
+61 error node -v v0.10.31
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/nws
+64 error fstream_path /usr/local/lib/node_modules/nws
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/nws'
+70 error fstream_stack /Users/laura/.nvm/v0.10.35/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /Users/laura/.nvm/v0.10.35/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:107:15)
+71 verbose exit [ 3, true ]

@@ -1,0 +1,31 @@
+<html ng-app="phonecatApp">
+<head>
+
+	<script src="bower_components/angular/angular.js"></script>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<script src="js/controllers.js"></script>
+</head>
+<body ng-controller="PhoneListCtrl">
+	<h1 class="page-header"> lab 2 </h1>
+	<div class="container"> Search: <input ng-model="query"> </div>
+	<div class="container"> Sort by: 
+
+		<select ng-model="orderProp">
+			<li class="list-group-item"> <option value="name">Alphabetical</option> </li>
+			<li class="list-group-item"> <option value="age">Newest</option></li>
+		</select>
+	</div>
+
+	<div class="well">
+	<h2> result</h2>
+	<ul class="phones" class="list-group">
+		<li class="list-group-item" ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+			<span>{{phone.name}}</span>
+			<p>{{phone.snippet}}</p>
+		</li>
+	</ul>
+</div>
+</body>
+</html>
+
+
