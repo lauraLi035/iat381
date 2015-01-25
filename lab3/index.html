@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv='Content-type' content='text/html; charset=utf-8'>
-    <title>Basic Example</title>
-    <link rel="stylesheet" href="react-0.12.2/examples/shared/css/base.css" />
-  </head>
-  <body>
-    <h3>lab3 challange ---- time </h3>
+<head>
+  <meta http-equiv='Content-type' content='text/html; charset=utf-8'>
+  <title>Basic Example</title>
+  <link rel="stylesheet" href="react-0.12.2/examples/shared/css/base.css" />
+</head>
+<body>
+  <h3>lab3 challange ---- time </h3>
 
-    <div id="container">
-      <p>
-        To install React, follow the instructions on
-        <a href="http://www.github.com/facebook/react/">GitHub</a>.
-      </p>
-      <p>
-        If you can see this, React is not working right.
-        If you checked out the source from GitHub make sure to run <code>grunt</code>.
-      </p>
-    </div>
+  <div id="container">
+    <p>
+      To install React, follow the instructions on
+      <a href="http://www.github.com/facebook/react/">GitHub</a>.
+    </p>
+    <p>
+      If you can see this, React is not working right.
+      If you checked out the source from GitHub make sure to run <code>grunt</code>.
+    </p>
+  </div>
 
    <!--  <h4>Example Details</h4>
-    <p>This is written in vanilla JavaScript (without JSX) and transformed in the browser.<p> -->
+   <p>This is written in vanilla JavaScript (without JSX) and transformed in the browser.<p> -->
 
     <script src="react-0.12.2/examples/shared/thirdparty/es5-shim.min.js"></script>
     <script src="react-0.12.2/examples/shared/thirdparty/es5-sham.min.js"></script>
     <script src="react-0.12.2/examples/shared/thirdparty/console-polyfill.js"></script>
     <script src="react-0.12.2/build/react.js"></script>
     <script>
-      var ExampleApplication = React.createClass({
-        render: function() {
-          var currentTime = new Date().getTime();
-          var elapsed = Math.round(this.props.elapsed  / 100);
-          var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
-          var message =
-            'the current time is '+currentTime+' React has been successfully running for ' + seconds + ' seconds.';
+    var ExampleApplication = React.createClass({
+      render: function() {
+        var minutes = 1000 * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
 
-          return React.DOM.p(null, message);
-        }
-      });
+        var currentTime = new Date().getTime();
+        var y = Math.round(currentTime / years)
+        var remainer = currentTime - y*years; 
+        y += 1970;
+        var m =  Math.round(remainer / days*30)+1;
+        var d = Math.round(remainer / days*30);
+        remainer -= d* days;
+        var h = Math.round(remainer/hours);
+        remainer -= h*hours;
+        var min = Math.round(remainer/minutes);
+        var sec = remainer - min*minutes;
+
+        var elapsed = Math.round(this.props.elapsed  / 100);
+        var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
+        var message =
+        'the current time is '+y+' 
+        .React has been successfully running for ' + seconds + ' seconds.';
+
+        return React.DOM.p(null, message);
+      }
+    });
 
       // Call React.createFactory instead of directly call ExampleApplication({...}) in React.render
       var ExampleApplicationFactory = React.createFactory(ExampleApplication);
@@ -47,8 +64,8 @@
         React.render(
           ExampleApplicationFactory({elapsed: new Date().getTime() - start}),
           document.getElementById('container')
-        );
+          );
       }, 50);
-    </script>
-  </body>
-</html>
+      </script>
+    </body>
+    </html>
