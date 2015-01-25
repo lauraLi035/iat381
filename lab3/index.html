@@ -29,10 +29,17 @@
     <script>
       var ExampleApplication = React.createClass({
         render: function() {
+        var years = days * 365;
+
+        var currentTime = new Date().getTime();
+        var y = Math.round(currentTime / years)
+        var remainer = currentTime - y*years; 
+        y += 1970;
+
           var elapsed = Math.round(this.props.elapsed  / 100);
           var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
           var message =
-            'Current time is ' + elapsed + ' React has been successfully running for ' + seconds + ' seconds.';
+            'Current time is ' + y + ' React has been successfully running for ' + seconds + ' seconds.';
 
           return React.DOM.p(null, message);
         }
