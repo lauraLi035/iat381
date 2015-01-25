@@ -7,6 +7,8 @@
 
   <script src="react-0.12.2/build/react.js"></script>
      <script src="react-0.12.2/examples/shared/thirdparty/es5-shim.min.js"></script>
+
+     <script src="react-0.12.2/build/JSXTransformer.js"></script>
     <script src="react-0.12.2/examples/shared/thirdparty/es5-sham.min.js"></script>
     <script src="react-0.12.2/examples/shared/thirdparty/console-polyfill.js"></script>
 
@@ -21,23 +23,28 @@
    <!--  <h4>Example Details</h4>
    <p>This is written in vanilla JavaScript (without JSX) and transformed in the browser.<p> -->
 
- 
-    
-
-    <script>
-    var CommentBox = React.createClass({
-      render: function() {
-        return (
-          '<div className="commentBox">
-          Hello, world! I am a CommentBox.
-          </div>'
-          );
-      }
-    });
-    React.render(
-      <CommentBox />,
-      document.getElementById('content')
+   
+      <script type="text/jsx">
+      React.render(
+        <h1>Hello, world!</h1>,
+        document.getElementById('content')
       );
+
+
+    // <script>
+    // var CommentBox = React.createClass({
+    //   render: function() {
+    //     return (
+    //       '<div className="commentBox">
+    //       Hello, world! I am a CommentBox.
+    //       </div>'
+    //       );
+    //   }
+    // });
+    // React.render(
+    //   <CommentBox />,
+    //   document.getElementById('content')
+    //   );
 
 
         // var minutes = 1000 * 60;
