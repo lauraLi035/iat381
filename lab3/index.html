@@ -35,16 +35,14 @@
         var years = days * 365;
 
         var currentTime = new Date().getTime();
-        var y = Math.round(currentTime / years)
-        var remainer = currentTime - y*years; 
-        y += 1970;
-        var m =  Math.round(remainer / days*30)+1;
-        var d = Math.round(remainer / days*30);
+        var y = Math.round(currentTime / years)+1970;
+        var m =  Math.round(currentTime / days*30)+1;
+        // var d = Math.round(remainer / days*30);
 
           var elapsed = Math.round(this.props.elapsed  / 100);
           var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
           var message =
-            'Current is year: ' + y + ' month ' + d
+            'Current is year: ' + y + ' month: ' + m
             + ' React has been successfully running for ' + seconds + ' seconds.';
 
           return React.DOM.p(null, message);
