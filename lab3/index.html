@@ -29,7 +29,7 @@
     <script>
       var ExampleApplication = React.createClass({
         render: function() {
-          var currentTime = = new Date().getTime();
+          var currentTime = new Date().getTime();
           var elapsed = Math.round(this.props.elapsed  / 100);
           var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
           var message =
