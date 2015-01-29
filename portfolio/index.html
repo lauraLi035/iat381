@@ -3,7 +3,6 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="bower_components/angular/angular.js"></script>
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 
 	<link href="css/index.css" rel="stylesheet">
@@ -13,8 +12,7 @@
 </head>
 
 <body>
-	<!-- NAVBAR ================================================== -->
-
+	<!-- navbar ================================================== -->
 	<div class="container">
 		<!-- 		<div class="navbar-wrapper"> -->
 		<nav class="navbar navbar-default navbar-fixed-top">
@@ -22,6 +20,7 @@
 				<img class="icon" 
 				src="img/myIcon.png" alt="icon not working" >
 			</a>
+
 			<div class="head">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -36,16 +35,17 @@
 					<ul class="nav navbar-nav">
 
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Works <span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Works <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="#">Witchase</a></li>
-								<li><a href="#">Laptop Selector</a></li>
-								<li><a href="#">Fragile Light</a></li>
+								<li><a href="witchase.html">Witchase</a></li>
+								<li><a href="littleSheep.html">Little Sheep</a></li>
+								<li><a href="laptopSelector.html">Laptop Selector</a></li>
+								<li><a href="beambot.html">Fragile Light</a></li>
 							</ul>
 						</li>
 
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -66,10 +66,10 @@
 			<div class="projHolder">
 				<img class="featurette-image img-responsive"
 				src="img/witchase.png" 
-				alt="itchase image not working" >
+				alt="witchase image not working" >
 				<div class="discription">
-					<h3> Witchase</h3>
-					<h5> Game UI/UX Design</h5>
+					<h2> Witchase</h2>
+					<h5> Game- UI/UX Design</h5>
 				</div>
 			</div>
 		</a>
@@ -80,10 +80,10 @@
 			<div class="projHolder">
 				<img class="featurette-image img-responsive"
 				src="img/littleSheep.jpg" 
-				alt="itchase image not working" >
+				alt="littleSheep image not working" >
 
 				<div class="discription">
-					<h3> Little Sheep</h3>
+					<h2> Little Sheep</h2>
 					<h5> Interface Design</h5>
 				</div>
 			</div>
@@ -97,7 +97,7 @@
 				src="img/laptop-home.png" 
 				alt="laptop selector not working" >
 				<div class="discription">
-					<h3> Laptop Selector</h3>
+					<h2> Laptop Selector</h2>
 					<h5> representation of Dynamic Data</h5>
 				</div>
 			</div>
@@ -112,15 +112,72 @@
 				alt="beambot not working">
 
 				<div class="discription">
-					<h3> beam-bot</h3>
-					<h5> Robot Circuit Form Design</h5>
+					<h2> Beam-Bot</h2>
+					<h5> Robot- Circuit Form Design</h5>
 				</div>
 			</div>
 		</a>
 	</div>	
 
+
+	<!-- about================================================== -->
+
+	<div id="about" >	
+		<div class="col-md-12" style="background-color: #f6f6f6; margin:30px 0 30px 0">
+			<div class="about">
+				<h1> About Me </h1>
+				<p> All products surround us are designed to communicate. A mug says “pick me up by the handle, and I would hold liquid for you.” I have great passion in designing how computer interfaces elements ‘talk’ to users. I believe good designed products should be modify themselves to meet users’ expectations and needs. Armed with software background, knowledge of human perception, and a heart of never giving up, I am on a journey to the ‘ideal’ solution. Therefore,my strong beliefs can assist in fulfilling users' expectations and needs.
+				</p>
+			</div>
+		</div>
+
+		<div class="aboutImage" >
+			<div class="col-md-6">
+				<img style="width: 100%"
+				src="img/team.jpg"  
+				alt="team1 not working">
+			</div>
+
+			<div class="col-md-6">
+				<img style="width: 100%"
+				src="img/team2.jpg"  
+				alt="team2 not working">
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- contact ================================================== -->
+	<div id="contact" class="col-md-12" style="background-color: #f6f6f6; margin:30px 0 30px 0; padding-top:10px">
+		<div class="row" >
+			<div class="col-lg-8 col-sm-8 col-md-8" style="text-align: center;">
+				<h4> Let’s create something amazing.</h4>
+			</div>
+
+			<div class="col-lg-4 col-sm-4 col-md-4">
+				<h4 >Contact</h4>
+				<p>
+					<a class="addresstext" 
+					href="mailto:xll@sfu.ca">xll@sfu.ca</a>|  +1 604 634 1688
+				</p>
+				<h4>Find me</h4>
+				<p>
+					<a class="addresstext" href="http://www.facebook.com/laura.li.9047">facebook</a> | 
+					<a class="addresstext" href='http://www.linkedin.com/pub/laura-li/b1/351/452/'>linkedin</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- copyright ================================================== -->
+
+	<div class="copyright">
+		&#169; Laura Li  2015 | created with Bootstrap
+	</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
 
