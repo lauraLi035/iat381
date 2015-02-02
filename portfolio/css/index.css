@@ -63,6 +63,8 @@ body {
   margin: 0px 20% 15px 20%;
   background-color: #f6f6f6;
   color: #606060;
+  position: relative;
+  z-index: 99;
 }
 
 .aboutImage{
